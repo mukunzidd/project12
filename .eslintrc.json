@@ -12,5 +12,9 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "rules": {}
+  "rules": {
+    "linebreak-style":0,
+    "class-methods-use-this":"off",
+    "no-console": "off"
+  }
 }
