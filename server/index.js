@@ -14,4 +14,4 @@ app.get('/api/v1/todo', todos.getAll);
 app.get('/api/v1/todo/:id', todos.getOne);
 app.put('/api/v1/todo/:id', todos.update);
 app.delete('/api/v1/todo/:id', todos.delete);
-app.listen(3000);
+app.listen(2020);
