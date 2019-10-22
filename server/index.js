@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import express from 'express';
 import bodyParse from 'body-parser';
 import todoRoute from './routes/todo';
