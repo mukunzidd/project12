@@ -1,6 +1,7 @@
 import express from 'express';
 import todos from './controllers/Todo';
 
+
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -14,4 +15,7 @@ app.get('/api/v1/todo', todos.getAll);
 app.get('/api/v1/todo/:id', todos.getOne);
 app.put('/api/v1/todo/:id', todos.update);
 app.delete('/api/v1/todo/:id', todos.delete);
-app.listen(2020);
+app.get('/status', (req, res) => {
+  res.send({ status: 'Active' });
+});
+app.listen(3000);
